@@ -1,0 +1,31 @@
+@use '../0-base/variables';
+
+.button-default {
+    border: 1px solid transparent;
+    display: inline-block;
+    background-color: variables.$bg-blue-color;
+    padding: 1.4rem 2rem;
+    border-radius: .4rem;
+    color: #fff;
+    transition: .6s ease;
+
+    &:hover {
+        border: 1px solid variables.$bg-blue-color;
+        background-color: transparent;
+        color: variables.$bg-blue-color;
+    }
+}
+
+.button-default-works{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    border: 1px solid transparent;
+    background-color: variables.$bg-blue-color;
+    padding: 1.4rem 2rem;
+    border-radius: .4rem;
+    color: #fff;
+    transition: .6s ease;
+    font-size: 1.4rem;
+}

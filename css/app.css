@@ -1,0 +1,287 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* 1rem equivale a 10px */
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#nav {
+  width: 100%;
+  height: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  color: #000;
+  transition: 0.5s ease;
+  padding: 1.2rem 0.8rem;
+}
+.nav-links a:hover {
+  color: #0D99FF;
+}
+
+#header {
+  width: 100%;
+  height: 88%;
+  padding-top: 4rem;
+  display: flex;
+}
+
+.header-content {
+  flex: 1 0 50%;
+}
+
+.header-img {
+  flex: 1 0 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-img img {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.header-content-text {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.header-content-name strong {
+  color: #282938;
+  font-weight: 600;
+}
+
+.header-content-title {
+  font-size: 4.2rem;
+  color: #282938;
+}
+.header-content-title span {
+  color: #0D99FF;
+}
+
+.header-content-subtitle {
+  font-weight: 400;
+  color: #1C1E53;
+  font-size: 1.6rem;
+  width: 80%;
+  line-height: 2.4rem;
+}
+
+.header-content-btn {
+  padding-top: 1.6rem;
+}
+
+main {
+  width: 100%;
+}
+
+section {
+  margin: 0 auto;
+  width: 90%;
+  padding: 5rem 0;
+}
+
+.section-title {
+  color: #282938;
+  font-size: 3.2rem;
+  padding-bottom: 8rem;
+}
+
+.section-title-alternative {
+  color: #282938;
+  font-size: 3.2rem;
+}
+
+.text-section {
+  line-height: 2.2rem;
+  color: #1C1E53;
+}
+
+/* Skills */
+.skills-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3.2rem;
+}
+
+.skills-card {
+  flex: 1 0 18%;
+  height: 220px;
+  padding: 2.4rem;
+  border-radius: 0.8rem;
+  border-bottom: 4px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1.2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 0.6s ease;
+}
+.skills-card:hover {
+  border-bottom: 4px solid #0D99FF;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.skills-card:hover P {
+  color: #1C1E53;
+}
+.skills-card h3 {
+  color: #282938;
+  text-transform: uppercase;
+}
+.skills-card p {
+  height: 12rem;
+  color: #000;
+}
+
+.skill-card-icon {
+  width: 46px;
+  height: 44px;
+  background: #FFFFFF;
+  padding: 1rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skill-card-icon img {
+  width: 90%;
+}
+
+/* About */
+.about {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.about-img {
+  flex: 1 0 50%;
+}
+.about-img img {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.about-content {
+  flex: 1 0 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.about-content p {
+  width: 90%;
+}
+
+/* Works */
+.works-title-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8rem;
+}
+
+.works-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.works-title p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #282938;
+}
+
+.works-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.2rem;
+}
+
+.works-card {
+  flex: 1 0 30%;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 0.8rem;
+}
+.works-card img {
+  border-radius: 0.4rem;
+}
+
+.button-default {
+  border: 1px solid transparent;
+  display: inline-block;
+  background-color: rgba(13, 153, 255, 0.8);
+  padding: 1.4rem 2rem;
+  border-radius: 0.4rem;
+  color: #fff;
+  transition: 0.6s ease;
+}
+.button-default:hover {
+  border: 1px solid rgba(13, 153, 255, 0.8);
+  background-color: transparent;
+  color: rgba(13, 153, 255, 0.8);
+}
+
+.button-default-works {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  border: 1px solid transparent;
+  background-color: rgba(13, 153, 255, 0.8);
+  padding: 1.4rem 2rem;
+  border-radius: 0.4rem;
+  color: #fff;
+  transition: 0.6s ease;
+  font-size: 1.4rem;
+}
+
+/*# sourceMappingURL=app.css.map */

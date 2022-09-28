@@ -1,0 +1,62 @@
+@use '../0-base/variables';
+
+#header {
+    width: 100%;
+    height: 88%;
+    padding-top: 4rem;
+    display: flex;
+}
+
+.header-content {
+    flex: 1 0 50%;
+}
+
+.header-img {
+    flex: 1 0 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+.header-content-text {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.6rem;
+}
+
+.header-content-name{
+    strong{
+        color: #282938;
+        font-weight: 600;
+    }
+}
+
+.header-content-title {
+    font-size: 4.2rem;
+    color: #282938;
+
+    span {
+        color: variables.$font-blue-color;
+    }
+}
+
+.header-content-subtitle {
+    font-weight: 400;
+    color: variables.$text-color;
+    font-size: 1.6rem;
+    width: 80%;
+    line-height: 2.4rem;
+}
+
+.header-content-btn {
+    padding-top: 1.6rem;
+}
