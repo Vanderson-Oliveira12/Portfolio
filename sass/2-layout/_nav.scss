@@ -1,14 +1,91 @@
+@use '../0-base/medias';
+@use '../0-base/variables';
+
 #nav {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     height: 12%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+
+    @include medias.small{
+        padding: 1.2rem 0;
+    }
+
+    @include medias.medium{
+        padding: 1.2rem 0;
+    }
+
+    @include medias.medium-large{
+        padding: 2.4rem 0;
+    }
 }
 
 .nav-links {
     display: flex;
     gap: 1.2rem;
+
+    /* Versao desktop */
+    @include medias.small{
+        display: none;
+    }
+
+    @include medias.medium{
+        display: none;
+    }
+}
+
+.menu-burguer{
+    display: none;
+
+    @include medias.small{
+        display: block;
+        padding: 1.4rem 0 1.4rem 1.4rem;
+    }
+
+    @include medias.medium{
+        display: block;
+        padding: 1.4rem 0 1.4rem 1.4rem;
+    }
+
+    i{
+        font-size: 2.4rem;
+    }
+}
+
+.nav-links-mobile{
+    background-color: #fff;
+    height: 100vh;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    transition: .6s ease;
+
+        a{
+            padding: 1.6rem;
+            font-size: 2rem;
+            color: variables.$text-color;
+        }
+}
+
+.active-menu{
+    right: 0;
+}
+
+.mobile-close{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 5rem;
+    padding: 1.6rem;
 }
 
 .nav-links a {

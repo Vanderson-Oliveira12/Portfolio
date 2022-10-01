@@ -1,26 +1,61 @@
 @use '../0-base/variables';
+@use '../0-base/medias';
 
 section {
     margin: 0 auto;
     width: 90%;
     padding: 5rem 0;
+
+    @include medias.small{
+        padding: 2.5rem 0;
+    }
+
+    @include medias.medium{
+        padding: 2.5rem 0;
+    }
 }
 
 .section-title {
     color: variables.$title-color;
     font-size: 3.2rem;
     padding-bottom: 8rem;
+
+    @include medias.small {
+        font-size: 2.2rem;
+        padding-bottom: 4rem;
+    }
+
+    @include medias.medium {
+        font-size: 2.2rem;
+        padding-bottom: 4rem;
+    }
 }
 
 .section-title-alternative {
     color: variables.$title-color;
     font-size: 3.2rem;
+
+    @include medias.small {
+        font-size: 2.2rem;
+    }
+
+    @include medias.medium {
+        font-size: 2.2rem;
+    }
 }
 
 .section-title-form {
     color: variables.$title-color;
     font-size: 3.2rem;
     padding-bottom: 2.4rem;
+
+    @include medias.small {
+        font-size: 2.2rem;
+    }
+
+    @include medias.medium {
+        font-size: 2.2rem;
+    }
 }
 
 .text-section {
@@ -36,6 +71,16 @@ section {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 3.2rem;
+
+    @include medias.small {
+        flex-direction: column;
+        gap: 1.8rem;
+    }
+
+    @include medias.medium {
+        flex-direction: column;
+        gap: 1.8rem;
+    }
 }
 
 .skills-card {
@@ -54,20 +99,31 @@ section {
     &:hover {
         border-bottom: 4px solid #0D99FF;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-
-        P {
-            color: #1C1E53;
-        }
     }
 
     h3 {
         color: variables.$title-color;
         text-transform: uppercase;
+
+        @include medias.small {
+            font-size: 1.8rem;
+        }
+
+        @include medias.medium {
+            font-size: 1.8rem;
+        }
     }
 
     p {
         height: 12rem;
-        color: #000;
+
+        @include medias.small {
+            font-size: 1.4rem;
+        }
+
+        @include medias.medium {
+            font-size: 1.4rem;
+        }
     }
 }
 
@@ -96,6 +152,16 @@ section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
+    @include medias.small {
+        flex-direction: column-reverse;
+        gap: 4.6rem;
+    }
+
+    @include medias.medium {
+        flex-direction: column-reverse;
+        gap: 4.6rem;
+    }
 }
 
 .about-img {
@@ -116,6 +182,16 @@ section {
 
     p {
         width: 90%;
+
+        @include medias.small {
+            width: 100%;
+            font-size: 1.4rem;
+        }
+
+        @include medias.medium {
+            width: 100%;
+            font-size: 1.4rem;
+        }
     }
 }
 
@@ -127,6 +203,19 @@ section {
     align-items: center;
     justify-content: space-between;
     padding-bottom: 8rem;
+
+    @include medias.small {
+        padding-bottom: 4rem;
+        gap: 1.4rem;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    @include medias.medium {
+        padding-bottom: 4rem;
+        gap: 1.4rem;
+        align-items: flex-start;
+    }
 }
 
 .works-title {
@@ -145,18 +234,65 @@ section {
     display: flex;
     justify-content: space-between;
     gap: 3.2rem;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 20px;
+
+    @include medias.small {
+        overflow: auto;
+        padding: 1.8rem 0;
+        gap: 1.6rem;
+    }
+
+    @include medias.medium {
+        overflow: auto;
+        padding: 1.8rem 0;
+        gap: 1.6rem;
+    }
 }
+
+/* Scroll */
+
+.works-cards {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+/* Works on Chrome, Edge, and Safari */
+.works-cards::-webkit-scrollbar {
+    width: 12px;
+}
+
+.works-cards::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.works-cards::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 20px;
+    border: 3px solid transparent;
+}
+
+
+/* Scroll */
 
 .works-card {
     flex: 1 0 30%;
     background: #FFFFFF;
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.15);
     border-radius: .8rem;
+    scroll-snap-align: start;
 
     img {
         border-radius: .4rem;
     }
 
+    @include medias.small {
+        flex: 1 0 34rem;
+    }
+
+    @include medias.medium {
+        flex: 1 0 34rem;
+    }
 }
 
 .works-card-content {
@@ -165,8 +301,26 @@ section {
     flex-direction: column;
     gap: 1.2rem;
 
-    h3{
+    h3 {
         color: #282938;
+
+        @include medias.small {
+            font-size: 1.8rem;
+        }
+
+        @include medias.medium {
+            font-size: 1.8rem;
+        }
+    }
+
+    p{
+        @include medias.small{
+            font-size: 1.4rem
+        }
+
+        @include medias.medium{
+            font-size: 1.4rem
+        }
     }
 
     .works-card-link {
@@ -185,17 +339,31 @@ section {
         padding-left: 0;
         padding-right: 0;
     }
+
+
 }
 
 /* Depoiments */
 
-.depoiments-container{
+.depoiments-container {
     display: flex;
     flex-wrap: wrap;
     gap: 3.2rem;
+
+    @include medias.small{
+        position: relative;
+        flex-direction: column;
+        height: 24rem;
+    }
+
+    @include medias.medium{
+        position: relative;
+        flex-direction: column;
+        height: 24rem;
+    }
 }
 
-.depoiments-item{
+.depoiments-item {
     flex: 1 0 26%;
     border: 1px solid #006B6A;
     border-radius: 6px;
@@ -207,53 +375,110 @@ section {
     height: 24rem;
     padding: 0 1.2rem;
 
-        p{
-            color: variables.$text-color;
-            line-height: 22px;
+    p {
+        color: variables.$text-color;
+        line-height: 22px;
+
+        @include medias.small{
+            font-size: 1.4rem;
         }
+
+        @include medias.medium{
+            font-size: 1.4rem;
+        }
+    }
+
+    @include medias.small{
+        position: absolute;
+    }
+
+    @include medias.medium{
+        position: absolute;
+    }
 }
 
-.depoiments-client{
+.depoiments-client {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1.6rem;
 
-        .client-author{
-            display: flex;
-            flex-direction: column;
-            gap: .4rem;
-        }
+    .client-author {
+        display: flex;
+        flex-direction: column;
+        gap: .4rem;
+    }
 }
 
 
 /* FORM */
 
-.form-section{
+.form-section {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
+    @include medias.small{
+        width: 90%;
+
+            p{
+                text-align: center;
+                font-size: 1.4rem;
+            }
+    }
+
+    @include medias.medium{
+        width: 90%;
+
+            p{
+                text-align: center;
+                font-size: 1.4rem;
+            }
+    }
 }
 
-.form-all{
+.form-all {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
+
+    @include medias.small{
+        width: 100%;
+    }
+
+    @include medias.medium{
+        width: 100%;
+    }
 }
 
-.input-field-all{
+.input-field-all {
     display: flex;
     gap: 2.4rem;
     padding-top: 4.8rem;
+
+    @include medias.small {
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 2.6rem;
+    }
+
+    @include medias.medium {
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 2.6rem;
+    }
 }
-.input-field{
+
+.input-field {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
 }
 
-.input-field label{
+.input-field label {
     display: flex;
     flex-direction: column;
     gap: .8rem;
@@ -261,31 +486,49 @@ section {
     color: variables.$text-color
 }
 
-.input-field input{
+.input-field input {
     border: 1px solid #5E3BEE;
     border-radius: 6px;
     padding: 1rem 1.2rem;
     width: 26rem;
+
+    @include medias.small{
+        width: 94%;
+    }
+
+    @include medias.medium{
+        width: 94%;
+    }
 }
 
-.input-field input:focus{
+.input-field input:focus {
     box-shadow: none;
     outline: none;
 }
 
-.form-all textarea{
+.form-all textarea {
     border: 1px solid #5E3BEE;
     height: 180px;
     border-radius: .6rem;
     padding: 1.2rem;
+
+    @include medias.small{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    @include medias.medium{
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
-.form-all textarea:focus::placeholder{
+.form-all textarea:focus::placeholder {
     transition: .6s ease;
     opacity: 0;
 }
 
-.form-all textarea:focus{
+.form-all textarea:focus {
     border: 1px solid #5E3BEE;
     box-shadow: none;
     outline: none;
@@ -293,18 +536,18 @@ section {
 
 /* Social */
 
-.social{
+.social {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.social-links{
+.social-links {
     display: flex;
     gap: 1rem;
 
-    i{
+    i {
         width: 50px;
         height: 100px;
         padding: .2rem;
@@ -312,9 +555,8 @@ section {
         color: #000000;
         transition: .6s ease;
 
-        &:hover{
+        &:hover {
             opacity: .8;
         }
     }
 }
-

@@ -1,4 +1,5 @@
 @use '../0-base/variables';
+@use '../0-base/medias';
 
 .button-default {
     border: 1px solid transparent;
@@ -14,6 +15,16 @@
         background-color: transparent;
         color: variables.$bg-blue-color;
     }
+
+    @include medias.small{
+        padding: 1.2rem 1.8rem;
+        font-size: 1.4rem;
+    }
+
+    @include medias.medium{
+        padding: 1.2rem 1.8rem;
+        font-size: 1.4rem;
+    }
 }
 
 .button-default-works{
@@ -28,6 +39,14 @@
     color: #fff;
     transition: .6s ease;
     font-size: 1.4rem;
+
+    @include medias.small{
+        padding: 1.2rem 1.4rem;
+    }
+
+    @include medias.medium{
+        padding: 1.2rem 1.4rem;
+    }
 }
 
 .button-submit{

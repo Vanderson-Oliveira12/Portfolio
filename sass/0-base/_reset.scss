@@ -1,3 +1,5 @@
+@use '../0-base/medias';
+
 *,
 *::after,
 *::before {
@@ -15,6 +17,18 @@ body {
     font-size: 1.6rem;
     height: 100vh;
     width: 100%;
+
+    @include medias.small{
+        height: auto;
+    }
+
+    @include medias.medium{
+        height: auto;
+    }
+
+    @include medias.medium-large{
+        height: auto;
+    }
 }
 
 li {
