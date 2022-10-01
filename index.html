@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
     <title>Vanderson Dev</title>
     <link rel="stylesheet" href="css/app.css">
 </head>
@@ -66,7 +70,7 @@
                         <img src="img/html.svg" alt="Icone Html 5">
                     </div>
                     <h3>html 5</h3>
-                    <p class="text-section">HTML 5 é uma linguangem de marcação, onde marcamos os elementos para definir
+                    <p class="text-section">HTML 5 é uma linguagem de marcação, onde marcamos os elementos para definir
                         quais informações a
                         página vai exibir.</p>
                 </div>
@@ -137,11 +141,13 @@
                         <h3>Dashboard PowerBI</h3>
                         <p class="text-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                             varius enim in eros.</p>
+                        <div class="works-card-link">
+                            <a href="#">
+                                Visualizar projeto
+                                <img src="img/arrow.svg" alt="Seta para ver mais">
+                            </a>
+                        </div>
                     </div>
-                    <a href="#">
-                        Visualizar projeto
-                        <img src="img/arrow.svg" alt="Seta para ver mais">
-                    </a>
                 </div>
                 <div class="works-card">
                     <div class="works-card-img">
@@ -151,11 +157,13 @@
                         <h3>Dashboard PowerBI</h3>
                         <p class="text-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                             varius enim in eros.</p>
+                        <div class="works-card-link">
+                            <a href="#">
+                                Visualizar projeto
+                                <img src="img/arrow.svg" alt="Seta para ver mais">
+                            </a>
+                        </div>
                     </div>
-                    <a href="#">
-                        Visualizar projeto
-                        <img src="img/arrow.svg" alt="Seta para ver mais">
-                    </a>
                 </div>
                 <div class="works-card">
                     <div class="works-card-img">
@@ -165,16 +173,148 @@
                         <h3>Dashboard PowerBI</h3>
                         <p class="text-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                             varius enim in eros.</p>
+                        <div class="works-card-link">
+                            <a href="#">
+                                Visualizar projeto
+                                <img src="img/arrow.svg" alt="Seta para ver mais">
+                            </a>
+                        </div>
                     </div>
-                    <a href="#">
-                        Visualizar projeto
-                        <img src="img/arrow.svg" alt="Seta para ver mais">
-                    </a>
                 </div>
             </div>
-
+        </section>
+        <section class="depoiments">
+            <h2 class="section-title">
+                Depoimentos de clientes
+            </h2>
+            <div class="depoiments-container">
+                <div class="depoiments-item">
+                    <img src="img/Stars.svg" alt="Estrelas">
+                    <p class="depoiments-text">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristique. Duis cursus, mi quis viverra.
+                    </p>
+                    <div class="depoiments-client">
+                        <img src="img/Avatar Image.jpg" alt="Cliente">
+                        <div class="client-author">
+                            <h4>Dianne Russell</h4>
+                            <p>
+                                <strong>
+                                    Starbucks
+                                </strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="depoiments-item">
+                    <img src="img/Stars.svg" alt="Estrelas">
+                    <p class="depoiments-text">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristique. Duis cursus, mi quis viverra.
+                    </p>
+                    <div class="depoiments-client">
+                        <img src="img/Avatar Image.jpg" alt="Cliente">
+                        <div class="client-author">
+                            <h4>Dianne Russell</h4>
+                            <p>
+                                <strong>
+                                    Starbucks
+                                </strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="depoiments-item">
+                    <img src="img/Stars.svg" alt="Estrelas">
+                    <p class="depoiments-text">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristique. Duis cursus, mi quis viverra.
+                    </p>
+                    <div class="depoiments-client">
+                        <img src="img/Avatar Image.jpg" alt="Cliente">
+                        <div class="client-author">
+                            <h4>Dianne Russell</h4>
+                            <p>
+                                <strong>
+                                    Starbucks
+                                </strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form-section">
+            <h2 class="section-title-form">
+                Contate-me
+            </h2>
+            <p class="text-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <form class="form-all" action="#">
+                <div class="input-field-all">
+                    <div class="input-field">
+                        <label>
+                            Nome
+                            <input type="text" name="name" id="name">
+                        </label>
+                        <label>
+                            Sobrenome
+                            <input type="text" name="lastname" id="lastname">
+                        </label>
+                    </div>
+                    <div class="input-field">
+                        <label>
+                            Email
+                            <input type="email" name="email" id="email">
+                        </label>
+                        <label>
+                            Telefone
+                            <input type="text" name="phone" id="phone">
+                        </label>
+                    </div>
+                </div>
+                <textarea name="message" id="message" placeholder="Digite sua mensagem..."></textarea>
+                <input class="button-default button-submit" type="submit" value="Enviar">
+            </form>
+        </section>
+        <section class="social">
+            <h2 class="section-title">
+                Minhas redes sociais
+            </h2>
+            <ul class="social-links">
+                <li>
+                    <a href="#">
+                        <i alt="Instagram" class="ri-instagram-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i alt="whatsApp" class="ri-whatsapp-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i alt="Github" class="ri-github-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i alt="LinkedIn" class="ri-linkedin-box-fill"></i>
+                    </a>
+                </li>
+            </ul>
         </section>
     </main>
+
+    <footer>
+        <p class="text-footer">
+            <strong>
+                Vanderson developer -  &copy; Copyright 2022
+            </strong>
+        </p>
+    </footer>
 
     <script src="app.js"></script>
 </body>
