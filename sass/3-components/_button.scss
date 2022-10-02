@@ -25,6 +25,11 @@
         padding: 1.2rem 1.8rem;
         font-size: 1.4rem;
     }
+
+    @include medias.medium-large{
+        padding: 1.2rem 1.8rem;
+        font-size: 1.4rem;
+    }
 }
 
 .button-default-works{
@@ -45,6 +50,10 @@
     }
 
     @include medias.medium{
+        padding: 1.2rem 1.4rem;
+    }
+
+    @include medias.medium-large{
         padding: 1.2rem 1.4rem;
     }
 }

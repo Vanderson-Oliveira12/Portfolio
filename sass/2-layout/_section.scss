@@ -29,6 +29,11 @@ section {
         font-size: 2.2rem;
         padding-bottom: 4rem;
     }
+
+    @include medias.medium-large {
+        font-size: 2.6rem;
+        padding-bottom: 4rem;
+    }
 }
 
 .section-title-alternative {
@@ -41,6 +46,10 @@ section {
 
     @include medias.medium {
         font-size: 2.2rem;
+    }
+
+    @include medias.medium-large{
+        font-size: 2.6rem;
     }
 }
 
@@ -55,6 +64,11 @@ section {
 
     @include medias.medium {
         font-size: 2.2rem;
+    }
+
+    
+    @include medias.medium-large {
+        font-size: 2.6rem;
     }
 }
 
@@ -125,6 +139,11 @@ section {
             font-size: 1.4rem;
         }
     }
+
+    @include medias.medium-large{
+        flex: 1 0 30%;
+        height: 220px;
+    }
 }
 
 .skill-card-icon {
@@ -151,6 +170,7 @@ section {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    gap: 3rem;
     flex-wrap: wrap;
 
     @include medias.small {
@@ -161,15 +181,29 @@ section {
     @include medias.medium {
         flex-direction: column-reverse;
         gap: 4.6rem;
+
     }
+
+    @include medias.medium-large{
+        gap: 5rem;
+    }
+
 }
 
 .about-img {
-    flex: 1 0 50%;
+    flex: 1 0 40%;
 
     img {
         margin: 0 auto;
         width: 90%;
+
+            @include medias.medium{
+                width: 60%;
+            }
+    }
+
+    @include medias.medium-large{
+        flex: 1 0 30%;
     }
 }
 
@@ -192,6 +226,15 @@ section {
             width: 100%;
             font-size: 1.4rem;
         }
+
+        @include medias.medium-large{
+            width: 100%;
+            font-size: 1.5rem;
+        }
+    }
+
+    @include medias.medium-large{
+        flex: 1 0 50%;
     }
 }
 
@@ -216,6 +259,12 @@ section {
         gap: 1.4rem;
         align-items: flex-start;
     }
+
+    @include medias.medium-large {
+        padding-bottom: 4rem;
+        gap: 1.4rem;
+        align-items: flex-start;
+    }
 }
 
 .works-title {
@@ -236,15 +285,19 @@ section {
     gap: 3.2rem;
     scroll-snap-type: x mandatory;
     scroll-padding-left: 20px;
+    overflow: auto;
 
     @include medias.small {
-        overflow: auto;
         padding: 1.8rem 0;
         gap: 1.6rem;
     }
 
     @include medias.medium {
-        overflow: auto;
+        padding: 1.8rem 0;
+        gap: 1.6rem;
+    }
+
+    @include medias.medium-large {
         padding: 1.8rem 0;
         gap: 1.6rem;
     }
@@ -293,6 +346,15 @@ section {
     @include medias.medium {
         flex: 1 0 34rem;
     }
+
+    @include medias.medium-large {
+        flex: 1 0 34rem;
+    }
+
+    @include medias.large{
+        flex: 1 0 34rem;
+
+    }
 }
 
 .works-card-content {
@@ -311,6 +373,10 @@ section {
         @include medias.medium {
             font-size: 1.8rem;
         }
+
+        @include medias.medium-large {
+            font-size: 1.8rem;
+        }
     }
 
     p{
@@ -319,6 +385,10 @@ section {
         }
 
         @include medias.medium{
+            font-size: 1.4rem
+        }
+
+        @include medias.medium-large{
             font-size: 1.4rem
         }
     }
@@ -361,6 +431,12 @@ section {
         flex-direction: column;
         height: 24rem;
     }
+
+    @include medias.medium-large{
+        position: relative;
+        flex-direction: column;
+        height: 24rem;
+    }
 }
 
 .depoiments-item {
@@ -393,6 +469,10 @@ section {
     }
 
     @include medias.medium{
+        position: absolute;
+    }
+
+    @include medias.medium-large{
         position: absolute;
     }
 }
