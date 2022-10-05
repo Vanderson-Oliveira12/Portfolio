@@ -627,9 +627,14 @@ section {
     display: flex;
     gap: 1rem;
 
+
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     i {
-        width: 50px;
-        height: 100px;
         padding: .2rem;
         font-size: 4.2rem;
         color: #000000;
