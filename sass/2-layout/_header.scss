@@ -7,17 +7,17 @@
     padding-top: 4rem;
     display: flex;
 
-    @include medias.small{
+    @include medias.small {
         flex-direction: column;
         gap: 5.2rem;
     }
 
-    @include medias.medium{
+    @include medias.medium {
         flex-direction: column;
         gap: 5.2rem;
     }
 
-    @include medias.medium-large{
+    @include medias.medium-large {
         flex-direction: column;
         gap: 5.2rem;
     }
@@ -37,20 +37,20 @@
         margin: 0 auto;
         width: 90%;
 
-            @include medias.medium-large{
-                width: 70%;
-            }
+        @include medias.medium-large {
+            width: 70%;
+        }
     }
 
-    @include medias.small{
+    @include medias.small {
         padding-bottom: 3.8rem;
     }
 
-    @include medias.medium{
+    @include medias.medium {
         padding-bottom: 3.8rem;
     }
 
-    @include medias.medium-large{
+    @include medias.medium-large {
         padding-bottom: 3.8rem;
     }
 }
@@ -64,21 +64,21 @@
     justify-content: center;
     gap: 1.6rem;
 
-    @include medias.small{
+    @include medias.small {
         width: 90%;
     }
 
-    @include medias.medium{
+    @include medias.medium {
         width: 90%;
     }
 
-    @include medias.medium-large{
+    @include medias.medium-large {
         width: 90%;
     }
 }
 
-.header-content-name{
-    strong{
+.header-content-name {
+    strong {
         color: #282938;
         font-weight: 600;
     }
@@ -87,21 +87,49 @@
 .header-content-title {
     font-size: 4.2rem;
     color: #282938;
+    position: relative;
+    width: 42rem;
 
-    @include medias.small{
+    @include medias.small {
         font-size: 2.8rem;
+        width: 25rem;
     }
 
-    @include medias.medium{
+    @include medias.medium {
         font-size: 2.8rem;
+        width: 25rem;
     }
 
-    @include medias.medium-large{
+    @include medias.medium-large {
         font-size: 3.2rem;
+        width: 32rem;
     }
 
     span {
         color: variables.$font-blue-color;
+    }
+}
+
+.header-content-title::after {
+    content: " ";
+    position: absolute;
+    background-color: #282938;
+    height: 5rem;
+    width: .2rem;
+    animation-name: textAnimated;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+
+    @include medias.small {
+        height: 3.5rem;
+    }
+
+    @include medias.medium {
+        height: 3.5rem;
+    }
+
+    @include medias.medium-large {
+        height: 3.5rem;
     }
 }
 
@@ -113,17 +141,17 @@
     line-height: 2.4rem;
 
 
-    @include medias.small{
+    @include medias.small {
         width: 100%;
         font-size: 1.4rem;
     }
 
-    @include medias.medium{
+    @include medias.medium {
         width: 80%;
         font-size: 1.4rem;
     }
 
-    @include medias.medium-large{
+    @include medias.medium-large {
         width: 80%;
         font-size: 1.6rem;
     }
@@ -131,4 +159,17 @@
 
 .header-content-btn {
     padding-top: 1.6rem;
+}
+
+
+
+
+@keyframes textAnimated {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

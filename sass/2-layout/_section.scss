@@ -441,7 +441,7 @@ section {
 
 .depoiments-item {
     flex: 1 0 26%;
-    border: 1px solid #006B6A;
+    border: 1px solid variables.$font-blue-color;
     border-radius: 6px;
     display: flex;
     flex-direction: column;
@@ -567,7 +567,7 @@ section {
 }
 
 .input-field input {
-    border: 1px solid #5E3BEE;
+    border: 1px solid variables.$font-blue-color;
     border-radius: 6px;
     padding: 1rem 1.2rem;
     width: 26rem;
@@ -587,10 +587,11 @@ section {
 }
 
 .form-all textarea {
-    border: 1px solid #5E3BEE;
+    border: 1px solid variables.$font-blue-color;
     height: 180px;
     border-radius: .6rem;
     padding: 1.2rem;
+    transition: .5s ease;
 
     @include medias.small{
         width: 90%;
@@ -609,9 +610,10 @@ section {
 }
 
 .form-all textarea:focus {
-    border: 1px solid #5E3BEE;
+    border: 1px solid variables.$font-blue-color;
     box-shadow: none;
     outline: none;
+    opacity: .5;
 }
 
 /* Social */
