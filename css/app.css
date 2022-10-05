@@ -247,24 +247,55 @@ body {
 .header-content-title {
   font-size: 4.2rem;
   color: #282938;
+  position: relative;
+  width: 42rem;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .header-content-title {
     font-size: 2.8rem;
+    width: 25rem;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .header-content-title {
     font-size: 2.8rem;
+    width: 25rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .header-content-title {
     font-size: 3.2rem;
+    width: 32rem;
   }
 }
 .header-content-title span {
   color: #0D99FF;
+}
+
+.header-content-title::after {
+  content: " ";
+  position: absolute;
+  background-color: #282938;
+  height: 5rem;
+  width: 0.2rem;
+  animation-name: textAnimated;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .header-content-title::after {
+    height: 3.5rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .header-content-title::after {
+    height: 3.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header-content-title::after {
+    height: 3.5rem;
+  }
 }
 
 .header-content-subtitle {
@@ -297,6 +328,14 @@ body {
   padding-top: 1.6rem;
 }
 
+@keyframes textAnimated {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 main {
   width: 100%;
 }
@@ -760,7 +799,7 @@ section {
 
 .depoiments-item {
   flex: 1 0 26%;
-  border: 1px solid #006B6A;
+  border: 1px solid #0D99FF;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
@@ -891,7 +930,7 @@ section {
 }
 
 .input-field input {
-  border: 1px solid #5E3BEE;
+  border: 1px solid #0D99FF;
   border-radius: 6px;
   padding: 1rem 1.2rem;
   width: 26rem;
@@ -913,10 +952,11 @@ section {
 }
 
 .form-all textarea {
-  border: 1px solid #5E3BEE;
+  border: 1px solid #0D99FF;
   height: 180px;
   border-radius: 0.6rem;
   padding: 1.2rem;
+  transition: 0.5s ease;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .form-all textarea {
@@ -937,9 +977,10 @@ section {
 }
 
 .form-all textarea:focus {
-  border: 1px solid #5E3BEE;
+  border: 1px solid #0D99FF;
   box-shadow: none;
   outline: none;
+  opacity: 0.5;
 }
 
 /* Social */

@@ -38,7 +38,43 @@ const menuMobile = {
 }
 
 const typedTitle = {
-    titleElement: document.querySelector('.header-content-title')
+    titleElement: document.querySelector('.header-content-title'),
+    text: 'Sou desenvolvedor ',
+    textTwo: "Front End",
+    typedInsert() {
+        let title = this.titleElement;
+        let textArr = this.text.split('');
+        let textIndex = 0;
+
+        let textIndexTwo = 0;
+        let textArrTwo = this.textTwo.split('');
+
+        let span = document.createElement('span');
+
+        setInterval(() => {
+
+            if (textIndex < textArr.length) {
+                title.textContent += `${textArr[textIndex]}`
+
+                textIndex++;
+            }
+
+            if (textIndex >= textArr.length) {
+                if (textIndexTwo < textArrTwo.length) {
+                    title.appendChild(span);
+                    span.textContent += `${textArrTwo[textIndexTwo]}`;
+                    textIndexTwo++;
+                }
+            }
+
+        }, 150)
+
+
+    },
+    typedInit() {
+        this.typedInsert();
+    }
 }
 
-menuMobile.menuInit()
+menuMobile.menuInit();
+typedTitle.typedInit();
