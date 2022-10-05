@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Olá, me chamo Vanderson sou desenvolvedor Front-End e freelancer. Que tal, fecharmos um negócio?">
+    <meta name="description"
+        content="Olá, me chamo Vanderson sou desenvolvedor Front-End e freelancer. Que tal, fecharmos um negócio?">
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Remixicon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -65,7 +69,7 @@
 
     <header id="header">
         <div class="header-content">
-            <div class="header-content-text">
+            <div class="header-content-text" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <p class="header-content-name">
                     <strong>
                         Olá, me chamo Vanderson
@@ -81,7 +85,8 @@
                 </div>
             </div>
         </div>
-        <div class="header-img">
+        <div class="header-img" data-aos="fade-up"
+        data-aos-offset="300" data-aos-duration="1000">
             <img src="img/IMAGE.svg" alt="Foto Vanderson Barboza">
         </div>
     </header>
@@ -92,7 +97,7 @@
                 Minhas Skills
             </h2>
             <div class="skills-cards">
-                <div class="skills-card">
+                <div class="skills-card" data-aos="fade-up" data-aos-duration="1000">
                     <div class="skill-card-icon">
                         <img src="img/html.svg" alt="Icone Html 5">
                     </div>
@@ -101,7 +106,7 @@
                         quais informações a
                         página vai exibir.</p>
                 </div>
-                <div class="skills-card">
+                <div class="skills-card" data-aos="fade-up" data-aos-duration="1400">
                     <div class="skill-card-icon">
                         <img src="img/Css.svg" alt="Icone Css">
                     </div>
@@ -110,7 +115,7 @@
                         propósito de
                         estilizar as páginas HTML.</p>
                 </div>
-                <div class="skills-card">
+                <div class="skills-card" data-aos="fade-up" data-aos-duration="1800">
                     <div class="skill-card-icon">
                         <img src="img/javascript.svg" alt="Icone Javascript">
                     </div>
@@ -119,7 +124,7 @@
                         script em alto nível com
                         tipagem dinâmica fraca e multiparadigma.</p>
                 </div>
-                <div class="skills-card">
+                <div class="skills-card" data-aos="fade-up" data-aos-duration="2200">
                     <div class="skill-card-icon">
                         <img src="img/React.svg" alt="Icone React">
                     </div>
@@ -132,10 +137,11 @@
         </section>
 
         <section class="about">
-            <div class="about-img">
+            <div class="about-img" data-aos="fade-up"
+            data-aos-duration="1000">
                 <img src="./img/IMAGE.svg" alt="Sobre mim">
             </div>
-            <div class="about-content">
+            <div class="about-content" data-aos="fade-down" data-aos-duration="1000">
                 <h2 class="section-title-alternative">Sobre mim</h2>
                 <p class="text-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius faucibus
                     massa sollicitudin
@@ -147,7 +153,8 @@
             </div>
         </section>
         <section class="works">
-            <div class="works-title-link">
+            <div class="works-title-link" data-aos="fade-right"
+            data-aos-easing="ease-in-sine">
                 <div class="works-title">
                     <p>Projetos recentes</p>
                     <h2 class="section-title-alternative">
@@ -211,7 +218,8 @@
             </div>
         </section>
         <section class="depoiments">
-            <h2 class="section-title">
+            <h2 class="section-title" data-aos="fade-zoom-in"
+            data-aos-duration="1000">
                 Depoimentos de clientes
             </h2>
             <div class="depoiments-container">
@@ -275,10 +283,10 @@
             </div>
         </section>
         <section class="form-section">
-            <h2 class="section-title-form">
+            <h2 class="section-title-form" data-aos="fade-down" data-aos-duration="1000">
                 Contate-me
             </h2>
-            <p class="text-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <p data-aos="fade-down" data-aos-duration="1000" class="text-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             <form class="form-all" action="#">
                 <div class="input-field-all">
                     <div class="input-field">
@@ -306,7 +314,7 @@
                 <input class="button-default button-submit" type="submit" value="Enviar">
             </form>
         </section>
-        <section class="social">
+        <section class="social" data-aos="fade-up" data-aos-duration="1000">
             <h2 class="section-title">
                 Minhas redes sociais
             </h2>
@@ -338,12 +346,19 @@
     <footer>
         <p class="text-footer">
             <strong>
-                Vanderson developer -  &copy; Copyright 2022
+                Vanderson developer - &copy; Copyright 2022
             </strong>
         </p>
     </footer>
 
     <script src="app.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
 </body>
 
 </html>
