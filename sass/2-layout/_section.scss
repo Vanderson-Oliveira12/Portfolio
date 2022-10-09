@@ -415,6 +415,14 @@ section {
 
 /* Depoiments */
 
+.depoiments .depoiments-desktop{
+    background-color: rebeccapurple;
+}
+
+.depoiments .depoiments-mobile{
+    background-color: red;
+}
+
 .depoiments-container {
     display: flex;
     flex-wrap: wrap;
