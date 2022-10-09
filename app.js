@@ -35,7 +35,7 @@ const menuMobile = {
         this.menuButton.addEventListener('click', this.activeMenu);
         this.closeButton.addEventListener('click', this.closeMenu);
     }
-}
+};
 
 const typedTitle = {
     titleElement: document.querySelector('.header-content-title'),
@@ -74,62 +74,8 @@ const typedTitle = {
     typedInit() {
         this.typedInsert();
     }
-}
+};
 
-const carouselMobile = {
-    arrowsElement: document.querySelectorAll('.depoiments-mobile-arrow i'),
-    itemsCarouselElement: document.querySelectorAll('.depoiments-mobile .depoiments-item'),
-    indexItem: 0,
-    slideCarousel() {
-        let itemCarousel = carouselMobile.itemsCarouselElement;
-        let carouselLength = itemCarousel.length - 1;
-
-        itemCarousel[carouselMobile.indexItem].classList.remove('depoiments-item-active');
-
-        carouselMobile.indexItem++;
-
-        if (carouselMobile.indexItem > carouselLength) {
-            carouselMobile.indexItem = 0;
-        }
-
-        itemCarousel[carouselMobile.indexItem].classList.add('depoiments-item-active');
-
-    },
-    previousItem() {
-
-        let carouselLength = carouselMobile.itemsCarouselElement.length - 1;
-
-        carouselMobile.itemsCarouselElement[carouselMobile.indexItem].classList.remove('depoiments-item-active');
-
-        carouselMobile.indexItem--
-
-        if (carouselMobile.indexItem < 0) {
-            carouselMobile.indexItem = carouselLength;
-        }
-
-        carouselMobile.itemsCarouselElement[carouselMobile.indexItem].classList.add('depoiments-item-active')
-
-    },
-    nextItem() {
-
-        carouselMobile.itemsCarouselElement[carouselMobile.indexItem].classList.remove('depoiments-item-active');
-
-        carouselMobile.indexItem++
-
-        if (carouselMobile.indexItem > carouselMobile.itemsCarouselElement.length - 1) {
-            carouselMobile.indexItem = 0
-        }
-
-        carouselMobile.itemsCarouselElement[carouselMobile.indexItem].classList.add('depoiments-item-active');
-
-    },
-    carouselMobileInit() {
-        setInterval(this.slideCarousel, 3000);
-        this.arrowsElement[0].addEventListener('click', this.previousItem);
-        this.arrowsElement[1].addEventListener('click', this.nextItem);
-    }
-}
 
 menuMobile.menuInit();
 typedTitle.typedInit();
-carouselMobile.carouselMobileInit();
