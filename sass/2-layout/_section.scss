@@ -6,11 +6,11 @@ section {
     width: 90%;
     padding: 5rem 0;
 
-    @include medias.small{
+    @include medias.small {
         padding: 2.5rem 0;
     }
 
-    @include medias.medium{
+    @include medias.medium {
         padding: 2.5rem 0;
     }
 }
@@ -48,7 +48,7 @@ section {
         font-size: 2.2rem;
     }
 
-    @include medias.medium-large{
+    @include medias.medium-large {
         font-size: 2.6rem;
     }
 }
@@ -66,7 +66,7 @@ section {
         font-size: 2.2rem;
     }
 
-    
+
     @include medias.medium-large {
         font-size: 2.6rem;
     }
@@ -140,7 +140,7 @@ section {
         }
     }
 
-    @include medias.medium-large{
+    @include medias.medium-large {
         flex: 1 0 30%;
         height: 220px;
     }
@@ -184,7 +184,7 @@ section {
 
     }
 
-    @include medias.medium-large{
+    @include medias.medium-large {
         gap: 5rem;
     }
 
@@ -197,12 +197,12 @@ section {
         margin: 0 auto;
         width: 90%;
 
-            @include medias.medium{
-                width: 60%;
-            }
+        @include medias.medium {
+            width: 60%;
+        }
     }
 
-    @include medias.medium-large{
+    @include medias.medium-large {
         flex: 1 0 30%;
     }
 }
@@ -227,13 +227,13 @@ section {
             font-size: 1.4rem;
         }
 
-        @include medias.medium-large{
+        @include medias.medium-large {
             width: 100%;
             font-size: 1.5rem;
         }
     }
 
-    @include medias.medium-large{
+    @include medias.medium-large {
         flex: 1 0 50%;
     }
 }
@@ -351,7 +351,7 @@ section {
         flex: 1 0 34rem;
     }
 
-    @include medias.large{
+    @include medias.large {
         flex: 1 0 34rem;
 
     }
@@ -379,16 +379,16 @@ section {
         }
     }
 
-    p{
-        @include medias.small{
+    p {
+        @include medias.small {
             font-size: 1.4rem
         }
 
-        @include medias.medium{
+        @include medias.medium {
             font-size: 1.4rem
         }
 
-        @include medias.medium-large{
+        @include medias.medium-large {
             font-size: 1.4rem
         }
     }
@@ -420,67 +420,48 @@ section {
 .depoiments .depoiments-desktop {
     scrollbar-width: none;
     scrollbar-color: none none;
-  }
-  
-  /* Works on Chrome, Edge, and Safari */
-  .depoiments .depoiments-desktop::-webkit-scrollbar {
+}
+
+/* Works on Chrome, Edge, and Safari */
+.depoiments .depoiments-desktop::-webkit-scrollbar {
     width: 12px;
-  }
-  
-  .depoiments .depoiments-desktop::-webkit-scrollbar-track {
+}
+
+.depoiments .depoiments-desktop::-webkit-scrollbar-track {
     background: transparent;
-  }
-  
-  .depoiments .depoiments-desktop::-webkit-scrollbar-thumb {
+}
+
+.depoiments .depoiments-desktop::-webkit-scrollbar-thumb {
     background-color: none;
     border-radius: none;
     border: none;
-  }
+}
 
 /* Scroll Desktop remove */
 
-.depoiments{
+.depoiments {
     position: relative;
 }
 
-.depoiments-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3.2rem;
-    position: relative;
-
-    @include medias.small{
-        flex-direction: column;
-        height: 24rem;
-    }
-
-    @include medias.medium{
-        flex-direction: column;
-        height: 24rem;
-    }
-
-    @include medias.medium-large{
-        flex-direction: column;
-        height: 28rem;
-        flex-wrap: nowrap;
-        overflow-x: scroll;
-    }
-}
-
-.depoiments .depoiments-desktop{
+.depoiments .depoiments-desktop {
     flex-wrap: nowrap;
-    overflow-x: scroll;
+    overflow-x: hidden;
+    display: flex;
+    position: relative;
+    padding: 1.2rem;
+    cursor: pointer;
 
     @include medias.small{
-        display: none;
+        padding-bottom: 8rem;
     }
 
     @include medias.medium{
-        display: none;
+        padding-bottom: 4rem;
     }
 
-    .depoiments-item{
-        flex: 0 0 340px;
+    .depoiments-item {
+        margin: 0 1rem;
+        flex: 0 0 30%;
         border: 1px solid variables.$font-blue-color;
         border-radius: 6px;
         display: flex;
@@ -490,108 +471,52 @@ section {
         align-items: flex-start;
         height: 24rem;
         padding: 0 1.2rem;
-
-        @include medias.medium-large{
-            position: absolute;
-        }
     }
+
 }
 
 
-.depoiments-desk-arrow{
+.depoiments-desk-arrow {
     display: flex;
     justify-content: space-between;
     gap: 1.4rem;
     position: absolute;
-    bottom: 0;
+    bottom: -20px;
     z-index: 10;
     width: 100%;
 
-    i{
+    i {
         color: #282828;
         font-size: 4.2rem;
         cursor: pointer;
         padding: 1rem;
+
+            @include medias.small{
+                font-size: 3.2rem;
+            }
+
+            @include medias.medium{
+                font-size: 3.2rem;
+            }
     }
 
     @include medias.small{
-        display: none;
-    }
-
-    @include medias.medium{
-        display: none;
+        bottom: 15px;
     }
 
 }
 
+.depoiments-item p {
 
-.depoiments .depoiments-mobile{
-    display: none;
-    padding-bottom: 4rem;
+    color: variables.$text-color;
+    line-height: 22px;
 
-    @include medias.small{
-        display: flex;
+    @include medias.small {
+        font-size: 1.4rem;
     }
 
-    @include medias.medium{
-        display: flex;
-    }
-
-    .depoiments-item{
-        opacity: 0;
-        transition: 1s ease;
-        flex: 1 0 26%;
-        border: 1px solid variables.$font-blue-color;
-        border-radius: 6px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 2.4rem;
-        align-items: flex-start;
-        height: 24rem;
-        padding: 0 1.2rem;
-    }
-
-    .depoiments-item-active{
-        opacity: 1;
-    }
-}
-
-.depoiments-mobile-arrow{
-    display: flex;
-    gap: 1.4rem;
-    position: absolute;
-    bottom: -15px;
-    right: 0;
-    z-index: 10;
-
-        i{
-            color: #282828;
-            font-size: 3.8rem;
-        }
-}
-
-.depoiments-item {
-
-    p {
-        color: variables.$text-color;
-        line-height: 22px;
-
-        @include medias.small{
-            font-size: 1.4rem;
-        }
-
-        @include medias.medium{
-            font-size: 1.4rem;
-        }
-    }
-
-    @include medias.small{
-        position: absolute;
-    }
-
-    @include medias.medium{
-        position: absolute;
+    @include medias.medium {
+        font-size: 1.4rem;
     }
 
 }
@@ -618,22 +543,22 @@ section {
     flex-direction: column;
     justify-content: center;
 
-    @include medias.small{
+    @include medias.small {
         width: 90%;
 
-            p{
-                text-align: center;
-                font-size: 1.4rem;
-            }
+        p {
+            text-align: center;
+            font-size: 1.4rem;
+        }
     }
 
-    @include medias.medium{
+    @include medias.medium {
         width: 90%;
 
-            p{
-                text-align: center;
-                font-size: 1.4rem;
-            }
+        p {
+            text-align: center;
+            font-size: 1.4rem;
+        }
     }
 }
 
@@ -642,11 +567,11 @@ section {
     flex-direction: column;
     gap: 2.4rem;
 
-    @include medias.small{
+    @include medias.small {
         width: 100%;
     }
 
-    @include medias.medium{
+    @include medias.medium {
         width: 100%;
     }
 }
@@ -691,11 +616,11 @@ section {
     padding: 1rem 1.2rem;
     width: 26rem;
 
-    @include medias.small{
+    @include medias.small {
         width: 94%;
     }
 
-    @include medias.medium{
+    @include medias.medium {
         width: 94%;
     }
 }
@@ -712,12 +637,12 @@ section {
     padding: 1.2rem;
     transition: .5s ease;
 
-    @include medias.small{
+    @include medias.small {
         width: 90%;
         margin: 0 auto;
     }
 
-    @include medias.medium{
+    @include medias.medium {
         width: 90%;
         margin: 0 auto;
     }
@@ -749,7 +674,7 @@ section {
     gap: 1rem;
 
 
-    a{
+    a {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -766,3 +691,8 @@ section {
         }
     }
 }
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
