@@ -89,20 +89,24 @@
     color: #282938;
     position: relative;
     width: 42rem;
+    height: 10.2rem;
 
     @include medias.small {
         font-size: 2.8rem;
         width: 25rem;
+        height: 6.8rem;
     }
 
     @include medias.medium {
         font-size: 2.8rem;
+        height: 6.8rem;
         width: 25rem;
     }
 
     @include medias.medium-large {
         font-size: 3.2rem;
         width: 32rem;
+        height: 6.8rem;
     }
 
     span {
