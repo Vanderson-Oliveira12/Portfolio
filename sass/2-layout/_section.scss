@@ -452,10 +452,12 @@ section {
     cursor: pointer;
 
     @include medias.small{
+        padding: 0;
         padding-bottom: 8rem;
     }
 
     @include medias.medium{
+        padding: 0;
         padding-bottom: 4rem;
     }
 
@@ -530,7 +532,12 @@ section {
     .client-author {
         display: flex;
         flex-direction: column;
-        gap: .4rem;
+        gap: .2rem;
+    }
+
+    img{
+        width: 56px;
+        border-radius: 50%;
     }
 }
 
