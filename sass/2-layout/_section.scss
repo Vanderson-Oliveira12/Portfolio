@@ -548,6 +548,7 @@ section {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 0;
 
     @include medias.small {
         width: 90%;
@@ -613,7 +614,8 @@ section {
     flex-direction: column;
     gap: .8rem;
     font-size: 1.4rem;
-    color: variables.$text-color
+    color: variables.$text-color;
+    position: relative;
 }
 
 .input-field input {
@@ -634,6 +636,16 @@ section {
 .input-field input:focus {
     box-shadow: none;
     outline: none;
+}
+
+.input-field label:first-child:before{
+    content: '*';
+    font-size: 1.6rem;
+    position: absolute;
+    left: 4rem;
+    top: 0;
+    color: red;
+    opacity: .8;
 }
 
 .form-all textarea {
@@ -664,6 +676,40 @@ section {
     box-shadow: none;
     outline: none;
     opacity: .5;
+}
+
+.form-msg-div{
+    width: 60%;
+    opacity: 0;
+    transition: 1s ease;
+    pointer-events: none;
+
+    @include medias.small{
+        width: 90%;
+    }
+
+    
+    @include medias.medium{
+        width: 90%;
+    }
+
+    @include medias.medium-large{
+        width: 60%;
+    }
+}
+
+.form-msg-div-active{
+    opacity: 1;
+    transition: 1s ease;
+    pointer-events: all;
+}
+
+.form-msg{
+    padding: 1.8rem 0;
+    margin-top: 1.4rem;
+    text-align: center;
+    background-color: rgba(13, 153, 255, 0.3);
+    color: rgb(40, 41, 56);
 }
 
 /* Social */
