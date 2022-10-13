@@ -4,32 +4,10 @@ const menuMobile = {
     navMobileElement: document.querySelector('.nav-links-mobile'),
     aria: false,
     activeMenu() {
-
         menuMobile.navMobileElement.classList.add('active-menu');
-
-        if (menuMobile.hasActiveMenu()) {
-            this.aria = true
-            menuMobile.menuButton.setAttribute('aria-expanded', this.aria);
-            menuMobile.navMobileElement.setAttribute('aria-expanded', this.aria)
-        }
-
     },
     closeMenu() {
         menuMobile.navMobileElement.classList.remove('active-menu');
-
-        if (!menuMobile.hasActiveMenu()) {
-            this.aria = false;
-            menuMobile.menuButton.setAttribute('aria-expanded', this.aria);
-            menuMobile.navMobileElement.setAttribute('aria-expanded', this.aria)
-        }
-
-    },
-    hasActiveMenu() {
-        if (menuMobile.navMobileElement.classList.contains('active-menu')) {
-            return true
-        } else {
-            return false
-        }
     },
     menuInit() {
         this.menuButton.addEventListener('click', this.activeMenu);

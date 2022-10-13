@@ -648,6 +648,26 @@ section {
     opacity: .8;
 }
 
+.input-field label.lastname:before{
+    content: '*';
+    font-size: 1.6rem;
+    position: absolute;
+    left: 7.5rem;
+    top: 0;
+    color: red;
+    opacity: .8;
+}
+
+.input-field label.phone:before{
+    content: '*';
+    font-size: 1.6rem;
+    position: absolute;
+    left: 5.8rem;
+    top: 0;
+    color: red;
+    opacity: .8;
+}
+
 .form-all textarea {
     border: 1px solid variables.$font-blue-color;
     height: 180px;
