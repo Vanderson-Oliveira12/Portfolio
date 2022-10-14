@@ -35,11 +35,7 @@
 
     img {
         margin: 0 auto;
-        width: 90%;
-
-        @include medias.medium-large {
-            width: 70%;
-        }
+        width: 85%;
     }
 
     @include medias.small {
@@ -110,7 +106,7 @@
     }
 
     span {
-        color: variables.$font-blue-color;
+        color: variables.$font-color;
     }
 }
 

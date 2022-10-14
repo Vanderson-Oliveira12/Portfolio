@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
+    <link rel="shortcut icon" href="img/V.svg" type="image/x-icon" width="16px" height="16px">
+
     <!-- Slick CSS -->
     <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
@@ -21,10 +23,6 @@
 
     <!-- Remixicon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-    <script
-        id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/ca6ca4cad92c3a7e0a599e43d/55a5901edfcf9a230f4e06800.js");
-    </script>
 
     <title>Vanderson Dev</title>
     <link rel="stylesheet" href="css/app.css">
@@ -51,7 +49,7 @@
             </li>
         </ul>
 
-        <div class="menu-burguer" aria-controls="nav-links-mobile" aria-expanded="false">
+        <div class="menu-burguer">
             <i class="ri-menu-3-line"></i>
         </div>
 
@@ -95,7 +93,7 @@
             </div>
         </div>
         <div class="header-img" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
-            <img src="img/IMAGE.svg" alt="Foto Vanderson Barboza">
+            <img src="img/author-main.png" alt="Foto Vanderson Barboza">
         </div>
     </header>
 
@@ -146,7 +144,7 @@
 
         <section class="about">
             <div class="about-img" data-aos="fade-up" data-aos-duration="1000">
-                <img src="./img/IMAGE.svg" alt="Sobre mim">
+                <img src="./img/sobre-foto.png" alt="Sobre mim">
             </div>
             <div class="about-content" data-aos="fade-down" data-aos-duration="1000">
                 <h2 class="section-title-alternative">Sobre mim</h2>
@@ -232,11 +230,9 @@
                 <div class="depoiments-item">
                     <img src="img/Stars.svg" alt="Estrelas">
                     <p class="depoiments-text">
-                        "Trabalhar com o Vanderson tem sido uma experiência bastante positiva. A comunicação é fácil e
-                        ele se dedica ao máximo para entregar
-                        com excelência o que foi proposto, além de um esforço extra para lidar com todos os incidentes
-                        que encontramos pelo caminho.
                         "
+                        O Vanderson é um bom profissional, e possui uma excelente comunicação. Atingiu as expectativas
+                        para o projeto."
                     </p>
                     <div class="depoiments-client">
                         <img src="img/aerun.png" alt="Imagem Cliente">
@@ -253,11 +249,10 @@
                 <div class="depoiments-item">
                     <img src="img/Stars.svg" alt="Estrelas">
                     <p class="depoiments-text">
-                        "Trabalhar com o Vanderson tem sido uma experiência bastante positiva. A comunicação é fácil e
-                        ele se dedica ao máximo para entregar
-                        com excelência o que foi proposto, além de um esforço extra para lidar com todos os incidentes
-                        que encontramos pelo caminho.
                         "
+                        O Vanderson é um profissional extremamente dedicado.
+                        Vai além das demandas.
+                        Perfeito para quem busca um desenvolvedor que veste a camisa do projeto."
                     </p>
                     <div class="depoiments-client">
                         <img src="img/guru.png" alt="Imagem Cliente">
@@ -295,10 +290,9 @@
                 <div class="depoiments-item">
                     <img src="img/Stars.svg" alt="Estrelas">
                     <p class="depoiments-text">
-                        "Trabalhar com o Vanderson tem sido uma experiência bastante positiva. A comunicação é fácil e
-                        ele se dedica ao máximo para entregar
-                        com excelência o que foi proposto, além de um esforço extra para lidar com todos os incidentes
-                        que encontramos pelo caminho.
+                        "Vanderson é um excelente profissional. Atencioso, transparente e comprometido com a melhor
+                        entrega. Gostei muito da sua postura com relação aos limites do que poderia ser feito e do
+                        esforço para entregar o melhor trabalho possível. Vamos trabalhar novamente com certeza."
                         "
                     </p>
                     <div class="depoiments-client">
@@ -316,11 +310,9 @@
                 <div class="depoiments-item">
                     <img src="img/Stars.svg" alt="Estrelas">
                     <p class="depoiments-text">
-                        "Trabalhar com o Vanderson tem sido uma experiência bastante positiva. A comunicação é fácil e
-                        ele se dedica ao máximo para entregar
-                        com excelência o que foi proposto, além de um esforço extra para lidar com todos os incidentes
-                        que encontramos pelo caminho.
                         "
+                        O Vanderson foi altamente especializado e crítico nas documentações,
+                        e o projeto foi entregue antes do prazo e com muita qualidade."
                     </p>
                     <div class="depoiments-client">
                         <img src="img/solution.png" alt="Imagem Cliente">
@@ -346,14 +338,14 @@
             </h2>
             <p data-aos="fade-down" data-aos-duration="1000" class="text-section">Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit. </p>
-            <form class="form-all" action="#">
+            <form class="form-all">
                 <div class="input-field-all">
                     <div class="input-field">
                         <label>
                             Nome
                             <input type="text" name="name" id="name">
                         </label>
-                        <label>
+                        <label class="lastname">
                             Sobrenome
                             <input type="text" name="lastname" id="lastname">
                         </label>
@@ -363,7 +355,7 @@
                             Email
                             <input type="email" name="email" id="email">
                         </label>
-                        <label>
+                        <label class="phone">
                             Telefone
                             <input type="text" name="phone" id="phone">
                         </label>
@@ -372,6 +364,9 @@
                 <textarea name="message" id="message" placeholder="Digite sua mensagem..."></textarea>
                 <input class="button-default button-submit" type="submit" value="Enviar">
             </form>
+            <div class="form-msg-div">
+                <p class="form-msg"></p>
+            </div>
         </section>
         <section class="social" data-aos="fade-up" data-aos-duration="1000">
             <h2 class="section-title">
@@ -379,24 +374,27 @@
             </h2>
             <ul class="social-links">
                 <li>
-                    <a target="_blank" href="https://www.instagram.com/vanderson.oliveirra/">
-                        <i alt="Instagram" class="ri-instagram-line"></i>
+                    <a target="_blank" title="Acessar Instagram de Vanderson"
+                        href="https://www.instagram.com/vanderson.oliveirra/">
+                        <i class="ri-instagram-line"></i>
                     </a>
                 </li>
                 <li>
-                    <a target="_blank"
+                    <a target="_blank" title="Acessar Whatsapp de Vanderson"
                         href="https://api.whatsapp.com/send?phone=5585999586366&text=Ol%C3%A1%2C%20est%C3%A1%20dispon%C3%ADvel%20para%20um%20freelancer%3F">
-                        <i alt="whatsApp" class="ri-whatsapp-fill"></i>
+                        <i class="ri-whatsapp-fill"></i>
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://github.com/Vanderson-Oliveira12">
-                        <i alt="Github" class="ri-github-fill"></i>
+                    <a target="_blank" title="Acessar Github de Vanderson"
+                        href="https://github.com/Vanderson-Oliveira12">
+                        <i class="ri-github-fill"></i>
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://www.linkedin.com/in/vanderson-de-oliveira-7458b4215/">
-                        <i alt="LinkedIn" class="ri-linkedin-box-fill"></i>
+                    <a target="_blank" title="Acessar linkedin de Vanderson"
+                        href="https://www.linkedin.com/in/vanderson-de-oliveira-7458b4215/">
+                        <i class="ri-linkedin-box-fill"></i>
                     </a>
                 </li>
             </ul>

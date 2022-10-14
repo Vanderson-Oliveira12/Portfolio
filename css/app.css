@@ -151,7 +151,7 @@ body {
   padding: 1.2rem 0.8rem;
 }
 .nav-links a:hover {
-  color: #0D99FF;
+  color: #F61515;
 }
 
 #header {
@@ -191,12 +191,7 @@ body {
 }
 .header-img img {
   margin: 0 auto;
-  width: 90%;
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .header-img img {
-    width: 70%;
-  }
+  width: 85%;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .header-img {
@@ -273,7 +268,7 @@ body {
   }
 }
 .header-content-title span {
-  color: #0D99FF;
+  color: #F61515;
 }
 
 .header-content-title::after {
@@ -465,7 +460,7 @@ section {
   transition: 0.6s ease;
 }
 .skills-card:hover {
-  border-bottom: 4px solid #0D99FF;
+  border-bottom: 4px solid #F61515;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .skills-card h3 {
@@ -551,11 +546,6 @@ section {
 .about-img img {
   margin: 0 auto;
   width: 90%;
-}
-@media (min-width: 481px) and (max-width: 767px) {
-  .about-img img {
-    width: 60%;
-  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .about-img {
@@ -758,7 +748,7 @@ section {
   }
 }
 .works-card-content .works-card-link {
-  border-bottom: 1px solid #0D99FF;
+  border-bottom: 1px solid #F61515;
   width: 140px;
 }
 .works-card-content a {
@@ -823,13 +813,13 @@ section {
 .depoiments .depoiments-desktop .depoiments-item {
   margin: 0 0.8rem;
   flex: 0 0 30%;
-  border: 1px solid #0D99FF;
+  border: 1px solid #000;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  height: 31rem;
+  height: 28rem;
   padding: 0 1.2rem;
 }
 
@@ -902,6 +892,7 @@ section {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 0;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .form-section {
@@ -972,10 +963,11 @@ section {
   gap: 0.8rem;
   font-size: 1.4rem;
   color: #1C1E53;
+  position: relative;
 }
 
 .input-field input {
-  border: 1px solid #0D99FF;
+  border: 1px solid #F61515;
   border-radius: 6px;
   padding: 1rem 1.2rem;
   width: 26rem;
@@ -996,8 +988,38 @@ section {
   outline: none;
 }
 
+.input-field label:first-child:before {
+  content: "*";
+  font-size: 1.6rem;
+  position: absolute;
+  left: 4rem;
+  top: 0;
+  color: red;
+  opacity: 0.8;
+}
+
+.input-field label.lastname:before {
+  content: "*";
+  font-size: 1.6rem;
+  position: absolute;
+  left: 7.5rem;
+  top: 0;
+  color: red;
+  opacity: 0.8;
+}
+
+.input-field label.phone:before {
+  content: "*";
+  font-size: 1.6rem;
+  position: absolute;
+  left: 5.8rem;
+  top: 0;
+  color: red;
+  opacity: 0.8;
+}
+
 .form-all textarea {
-  border: 1px solid #0D99FF;
+  border: 1px solid #F61515;
   height: 180px;
   border-radius: 0.6rem;
   padding: 1.2rem;
@@ -1022,10 +1044,46 @@ section {
 }
 
 .form-all textarea:focus {
-  border: 1px solid #0D99FF;
+  border: 1px solid #F61515;
   box-shadow: none;
   outline: none;
   opacity: 0.5;
+}
+
+.form-msg-div {
+  width: 60%;
+  opacity: 0;
+  transition: 1s ease;
+  pointer-events: none;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .form-msg-div {
+    width: 90%;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .form-msg-div {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .form-msg-div {
+    width: 60%;
+  }
+}
+
+.form-msg-div-active {
+  opacity: 1;
+  transition: 1s ease;
+  pointer-events: all;
+}
+
+.form-msg {
+  padding: 1.8rem 0;
+  margin-top: 1.4rem;
+  text-align: center;
+  background-color: rgba(246, 21, 21, 0.8);
+  color: #fff;
 }
 
 /* Social */
@@ -1079,16 +1137,16 @@ footer {
 .button-default {
   border: 1px solid transparent;
   display: inline-block;
-  background-color: rgba(13, 153, 255, 0.8);
+  background-color: #F61515;
   padding: 1.4rem 2rem;
   border-radius: 0.4rem;
   color: #fff;
   transition: 0.6s ease;
 }
 .button-default:hover {
-  border: 1px solid rgba(13, 153, 255, 0.8);
+  border: 1px solid #F61515;
   background-color: transparent;
-  color: rgba(13, 153, 255, 0.8);
+  color: #F61515;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .button-default {
@@ -1115,7 +1173,7 @@ footer {
   justify-content: center;
   gap: 1.2rem;
   border: 1px solid transparent;
-  background-color: rgba(13, 153, 255, 0.8);
+  background-color: #F61515;
   padding: 1.4rem 2rem;
   border-radius: 0.4rem;
   color: #fff;

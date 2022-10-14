@@ -4,16 +4,16 @@
 .button-default {
     border: 1px solid transparent;
     display: inline-block;
-    background-color: variables.$bg-blue-color;
+    background-color: variables.$bg-color;
     padding: 1.4rem 2rem;
     border-radius: .4rem;
     color: #fff;
     transition: .6s ease;
 
     &:hover {
-        border: 1px solid variables.$bg-blue-color;
+        border: 1px solid variables.$bg-color;
         background-color: transparent;
-        color: variables.$bg-blue-color;
+        color: variables.$bg-color;
     }
 
     @include medias.small{
@@ -38,7 +38,7 @@
     justify-content: center;
     gap: 1.2rem;
     border: 1px solid transparent;
-    background-color: variables.$bg-blue-color;
+    background-color: variables.$bg-color;
     padding: 1.4rem 2rem;
     border-radius: .4rem;
     color: #fff;
