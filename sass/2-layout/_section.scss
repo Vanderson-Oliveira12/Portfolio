@@ -111,7 +111,7 @@ section {
     transition: .6s ease;
 
     &:hover {
-        border-bottom: 4px solid #0D99FF;
+        border-bottom: 4px solid #F61515;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     }
 
@@ -196,10 +196,6 @@ section {
     img {
         margin: 0 auto;
         width: 90%;
-
-        @include medias.medium {
-            width: 60%;
-        }
     }
 
     @include medias.medium-large {
@@ -394,7 +390,7 @@ section {
     }
 
     .works-card-link {
-        border-bottom: 1px solid #0D99FF;
+        border-bottom: 1px solid variables.$bg-color;
         width: 140px;
     }
 
@@ -464,13 +460,13 @@ section {
     .depoiments-item {
         margin: 0 .8rem;
         flex: 0 0 30%;
-        border: 1px solid variables.$font-blue-color;
+        border: 1px solid #000;
         border-radius: 6px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
-        height: 31rem;
+        height: 28rem;
         padding: 0 1.2rem;
     }
 
@@ -619,7 +615,7 @@ section {
 }
 
 .input-field input {
-    border: 1px solid variables.$font-blue-color;
+    border: 1px solid variables.$font-color;
     border-radius: 6px;
     padding: 1rem 1.2rem;
     width: 26rem;
@@ -669,7 +665,7 @@ section {
 }
 
 .form-all textarea {
-    border: 1px solid variables.$font-blue-color;
+    border: 1px solid variables.$font-color;
     height: 180px;
     border-radius: .6rem;
     padding: 1.2rem;
@@ -692,7 +688,7 @@ section {
 }
 
 .form-all textarea:focus {
-    border: 1px solid variables.$font-blue-color;
+    border: 1px solid variables.$font-color;
     box-shadow: none;
     outline: none;
     opacity: .5;
@@ -728,8 +724,8 @@ section {
     padding: 1.8rem 0;
     margin-top: 1.4rem;
     text-align: center;
-    background-color: rgba(13, 153, 255, 0.3);
-    color: rgb(40, 41, 56);
+    background-color: rgba(246, 21, 21, .8);
+    color: #fff;
 }
 
 /* Social */
