@@ -7,6 +7,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 /* 1rem equivale a 10px */
@@ -562,6 +563,8 @@ section {
 }
 .about-content p {
   width: 90%;
+  letter-spacing: 1px;
+  line-height: 25px;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .about-content p {
@@ -684,6 +687,15 @@ section {
   border-radius: 0.8rem;
   scroll-snap-align: start;
 }
+.works-card .works-card-img {
+  height: 32rem;
+}
+.works-card .works-card-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  background-position: 100px 500px;
+}
 .works-card img {
   border-radius: 0.4rem;
 }
@@ -731,6 +743,10 @@ section {
   .works-card-content h3 {
     font-size: 1.8rem;
   }
+}
+.works-card-content p {
+  height: 9rem;
+  width: 95%;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .works-card-content p {

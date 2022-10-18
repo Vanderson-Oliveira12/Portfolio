@@ -212,6 +212,8 @@ section {
 
     p {
         width: 90%;
+        letter-spacing: 1px;
+        line-height: 25px;
 
         @include medias.small {
             width: 100%;
@@ -331,6 +333,18 @@ section {
     border-radius: .8rem;
     scroll-snap-align: start;
 
+    .works-card-img{
+        height: 32rem;
+
+
+            img{
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+                background-position: 100px 500px;
+            }
+    }
+
     img {
         border-radius: .4rem;
     }
@@ -376,6 +390,9 @@ section {
     }
 
     p {
+
+        height: 9rem;
+        width: 95%;
         @include medias.small {
             font-size: 1.4rem
         }
