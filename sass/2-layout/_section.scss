@@ -218,6 +218,7 @@ section {
         @include medias.small {
             width: 100%;
             font-size: 1.4rem;
+            letter-spacing: 0px;
         }
 
         @include medias.medium {
