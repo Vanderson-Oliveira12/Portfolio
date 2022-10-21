@@ -139,6 +139,21 @@ const receiveRegister = {
     }
 }
 
+const navFixed = {
+    navElement: document.querySelector('.nav'),
+    navInit(){
+
+        window.addEventListener('scroll', (e)=>{
+            if(window.pageYOffset > 60){
+                this.navElement.classList.add('nav-active');
+            } else{
+                this.navElement.classList.remove('nav-active');
+            }
+        })
+    }
+}
+
+navFixed.navInit()
 
 menuMobile.menuInit();
 typedTitle.typedInit();

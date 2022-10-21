@@ -1,7 +1,32 @@
 @use '../0-base/medias';
 @use '../0-base/variables';
 
-#nav {
+#nav-mobile{
+    width: 90%;
+    margin: 0 auto;
+    height: 12%;
+    display: none;
+
+    @include medias.small{
+        padding: 1.2rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @include medias.medium{
+        padding: 1.2rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @include medias.medium-large{
+        padding: 2.4rem 0;
+    }
+}
+
+.nav {
     width: 90%;
     margin: 0 auto;
     height: 12%;
@@ -11,15 +36,27 @@
 
     @include medias.small{
         padding: 1.2rem 0;
+        display: none;
     }
 
     @include medias.medium{
         padding: 1.2rem 0;
+        display: none;
     }
 
     @include medias.medium-large{
         padding: 2.4rem 0;
     }
+}
+
+.nav-active{
+    width: 100%;
+    justify-content: space-around;
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .nav-links {
