@@ -232,6 +232,27 @@
                         </div>
                     </div>
                 </div>
+                <div class="works-card">
+                    <div class="works-card-img">
+                        <img src="img/movix.png" alt="Imagem do projeto">
+                    </div>
+                    <div class="works-card-content">
+                        <h3>Movix Movies</h3>
+                        <p class="text-section">
+                            Todos os detalhes dos seus filmes preferidos em apenas uma pesquisa.
+                        </p>
+                        <div class="works-card-link">
+                            <a href="https://movix-movie.vercel.app/" target="_blank">
+                                Visualizar projeto
+                                <img src="img/arrow.svg" alt="Seta para ver mais">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="works-desk-arrow">
+                <i class="ri-arrow-left-circle-line arrow-desk-left"></i>
+                <i class="ri-arrow-right-circle-line arrow-desk-right"></i>
             </div>
         </section>
         <section class="depoiments" id="depoiments">
@@ -435,6 +456,53 @@
     </script>
 
     <script>
+        $('.works-cards').slick({
+            dots: false,
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            prevArrow: $('.works-desk-arrow .arrow-desk-left'),
+            nextArrow: $('.works-desk-arrow .arrow-desk-right'),
+            responsive: [
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 1280,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+            ]
+        });
+
         $('.depoiments-desktop').slick({
             dots: false,
             infinite: true,
@@ -443,8 +511,8 @@
             slidesToScroll: 3,
             autoplay: true,
             autoplaySpeed: 5000,
-            prevArrow: $('.arrow-desk-left'),
-            nextArrow: $('.arrow-desk-right'),
+            prevArrow: $('.depoiments-desk-arrow .arrow-desk-left'),
+            nextArrow: $('.depoiments-desk-arrow .arrow-desk-right'),
             responsive: [
                 {
                     breakpoint: 480,
