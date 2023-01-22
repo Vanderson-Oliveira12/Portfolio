@@ -240,6 +240,10 @@ section {
 
 /* Works */
 
+.works{
+    padding-bottom: 0px;
+}
+
 .works-title-link {
     display: flex;
     align-items: center;
@@ -281,10 +285,10 @@ section {
 .works-cards {
     display: flex;
     justify-content: space-between;
-    gap: 3.2rem;
     scroll-snap-type: x mandatory;
     scroll-padding-left: 20px;
-    overflow: auto;
+    overflow: scroll;
+    cursor: pointer;
 
     @include medias.small {
         padding: 1.8rem 0;
@@ -299,6 +303,28 @@ section {
     @include medias.medium-large {
         padding: 1.8rem 0;
         gap: 1.6rem;
+    }
+}
+
+.works-desk-arrow {
+    padding: 1.8rem 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    i {
+        color: #282828;
+        font-size: 4.2rem;
+        cursor: pointer;
+        padding: 1rem;
+
+        @include medias.small {
+            font-size: 3.2rem;
+        }
+
+        @include medias.medium {
+            font-size: 3.2rem;
+        }
     }
 }
 
@@ -328,22 +354,22 @@ section {
 /* Scroll */
 
 .works-card {
-    flex: 1 0 30%;
+    flex: 1 0 420px;
     background: #FFFFFF;
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.15);
     border-radius: .8rem;
     scroll-snap-align: start;
+    margin-right: 3.2rem;
 
-    .works-card-img{
+    .works-card-img {
         height: 32rem;
 
-
-            img{
-                object-fit: cover;
-                height: 100%;
-                width: 100%;
-                background-position: 100px 500px;
-            }
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            background-position: 100px 500px;
+        }
     }
 
     img {
@@ -394,6 +420,7 @@ section {
 
         height: 9rem;
         width: 95%;
+
         @include medias.small {
             font-size: 1.4rem
         }
@@ -465,12 +492,12 @@ section {
     padding: 1.2rem;
     cursor: pointer;
 
-    @include medias.small{
+    @include medias.small {
         padding: 0;
         padding-bottom: 8rem;
     }
 
-    @include medias.medium{
+    @include medias.medium {
         padding: 0;
         padding-bottom: 4rem;
     }
@@ -494,7 +521,7 @@ section {
     color: variables.$text-color;
     line-height: 22px;
     font-size: 1.5rem;
-  
+
     @include medias.small {
         font-size: 1.4rem;
     }
@@ -517,7 +544,7 @@ section {
         gap: .2rem;
     }
 
-    img{
+    img {
         width: 56px;
         border-radius: 50%;
     }
@@ -539,16 +566,16 @@ section {
         cursor: pointer;
         padding: 1rem;
 
-            @include medias.small{
-                font-size: 3.2rem;
-            }
+        @include medias.small {
+            font-size: 3.2rem;
+        }
 
-            @include medias.medium{
-                font-size: 3.2rem;
-            }
+        @include medias.medium {
+            font-size: 3.2rem;
+        }
     }
 
-    @include medias.small{
+    @include medias.small {
         bottom: 15px;
     }
 
@@ -652,7 +679,7 @@ section {
     outline: none;
 }
 
-.input-field label:first-child:before{
+.input-field label:first-child:before {
     content: '*';
     font-size: 1.6rem;
     position: absolute;
@@ -662,7 +689,7 @@ section {
     opacity: .8;
 }
 
-.input-field label.lastname:before{
+.input-field label.lastname:before {
     content: '*';
     font-size: 1.6rem;
     position: absolute;
@@ -672,7 +699,7 @@ section {
     opacity: .8;
 }
 
-.input-field label.phone:before{
+.input-field label.phone:before {
     content: '*';
     font-size: 1.6rem;
     position: absolute;
@@ -712,33 +739,33 @@ section {
     opacity: .5;
 }
 
-.form-msg-div{
+.form-msg-div {
     width: 60%;
     opacity: 0;
     transition: 1s ease;
     pointer-events: none;
 
-    @include medias.small{
+    @include medias.small {
         width: 90%;
     }
 
-    
-    @include medias.medium{
+
+    @include medias.medium {
         width: 90%;
     }
 
-    @include medias.medium-large{
+    @include medias.medium-large {
         width: 60%;
     }
 }
 
-.form-msg-div-active{
+.form-msg-div-active {
     opacity: 1;
     transition: 1s ease;
     pointer-events: all;
 }
 
-.form-msg{
+.form-msg {
     padding: 1.8rem 0;
     margin-top: 1.4rem;
     text-align: center;
@@ -781,4 +808,4 @@ section {
 .swiper {
     width: 600px;
     height: 300px;
-  }
+}
