@@ -288,7 +288,6 @@ section {
     scroll-snap-type: x mandatory;
     scroll-padding-left: 20px;
     overflow: scroll;
-    cursor: pointer;
 
     @include medias.small {
         padding: 1.8rem 0;
@@ -368,7 +367,7 @@ section {
             object-fit: cover;
             height: 100%;
             width: 100%;
-            background-position: 100px 500px;
+            background-position: center center;
         }
     }
 

@@ -682,7 +682,6 @@ section {
   scroll-snap-type: x mandatory;
   scroll-padding-left: 20px;
   overflow: scroll;
-  cursor: pointer;
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .works-cards {
@@ -763,7 +762,7 @@ section {
   object-fit: cover;
   height: 100%;
   width: 100%;
-  background-position: 100px 500px;
+  background-position: center center;
 }
 .works-card img {
   border-radius: 0.4rem;
